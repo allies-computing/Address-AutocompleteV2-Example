@@ -3,7 +3,7 @@ Address-AutocompleteV2-Example
 
 This is a ready built example of how to implement address autocomplete using PostCoder Web.
 
-Edit the file /js/jquery.pcw.autocomplete.js and enter your API (Search) key.
+Edit the file /js/jquery.allies.autocomplete.js and enter your API (Search) key.
 
 **To use this example you must have a PostCoder Web account.**
 
