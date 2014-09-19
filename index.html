@@ -1,0 +1,55 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=utf-8>
+        <title>Autocomplete Example | Allies</title>
+        <link href="css/bootstrap.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <div class="row-fluid" id="content">
+          <div class="span12">
+            <form class="form-horizontal">
+              <fieldset>
+                <legend>Autocomplete Demo</legend>
+                
+                <div class="control-group">
+                  <label for="wa-input" class="control-label"></label>
+                  <div class="controls">
+                    <div class="span12 dropdown">
+                      <div class="input-prepend span6">
+                        <input type="text" class="span10">
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+
+              </fieldset>
+            </form>
+          </div>
+        </div>
+
+
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script src="js/placeholders.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jQuery.ScrollTo.min.js"></script>
+        <script src="js/jquery.allies.autocomplete.js"></script>
+
+        <script>
+
+          $(document).ready(function() {
+
+            $('input').alliesAutoComplete();
+
+            $('.tip').tooltip();
+
+            // placeholder support for ie
+            Placeholders.init({live:true});
+
+          });
+
+        </script>
+
+    </body>
+</html>
