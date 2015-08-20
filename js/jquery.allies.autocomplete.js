@@ -258,7 +258,9 @@
         */
         function finish(id){
 
-          var url = constants.finishURL + plugin.config.searchkey + '/address/' + plugin.config.dataset + '/x?udprn='+id+'&lines=4&exclude=organisation,county';
+          var searchstring = plugin.acInput.val();
+
+          var url = constants.finishURL + plugin.config.searchkey + '/address/' + plugin.config.dataset + '/' + searchstring + '?udprn='+id+'&lines=4&exclude=organisation,county';
 
           if(xhr && xhr.readyState != 4){
             xhr.abort();
